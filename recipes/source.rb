@@ -169,6 +169,7 @@ else
     group "root"
     mode 00755
     variables(
+      :conf_dir => node['nginx']['source']['conf_path'],
       :src_binary => node['nginx']['binary'],
       :pid => node['nginx']['pid']
     )
